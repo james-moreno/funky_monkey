@@ -1,0 +1,14 @@
+<button ng-click="home()">Home</button>
+<button ng-click="logout()">Logout</button>
+<h3>New Question</h3>
+<form name="question" ng-submit="new_question()">
+    {{errors}}
+    <p>
+        <label for="question">Question: <textarea ng-model="question.title" rows="8" cols="40"></textarea></label>
+    </p>
+    <p>
+        <label for="description">Description(optional): <textarea ng-model="question.description" rows="8" cols="40"></textarea></label>
+    </p>
+    <button ng-click="home()">Cancel</button>
+    <input type="submit" value="Submit">
+</form>
